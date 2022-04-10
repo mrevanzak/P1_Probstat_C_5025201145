@@ -125,7 +125,7 @@ Fungsi Probabilitas dari Distribusi Exponensial
 lambda = 3
 dexp(x = seq(1, 10, by = 0.1) , rate = lambda)
 ```
-Menggunakan fungsi dexp untuk menghitung peluang distribusi exponensial. nilai x adalah nilai 1 = 10 dengan interval 0.1
+Menggunakan fungsi dexp untuk menghitung peluang distribusi exponensial. nilai x adalah nilai 1 - 10 dengan interval 0.1
 
 ### B
 Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random
@@ -161,7 +161,7 @@ x2 = ceiling(avg)
 dn = pnorm(x2, mean, sd, lower.tail = TRUE) - pnorm(x1, mean, sd, lower.tail = TRUE)
 cat("Distribusi normal P(X1 <= x <= X2) = ", dn)
 ```
-Pertama generate nilai randomnya lalu di rata-rata. Setelah itu bisa didapatkan nilai x1 dan x2. Kemudian baru hitung peluang distribusi normal P(X1 ≤ x ≤ X2). Peluang distribusi normal P(X1 ≤ x ≤ X2) bisa didapat dari P(x ≤ X2) -  P(-∞ ≤ X1). Tinggal dihitung menggunakan fungsi pnorm
+Pertama generate nilai randomnya lalu di rata-rata. Setelah itu bisa didapatkan nilai x1 dan x2. Kemudian baru hitung peluang distribusi normal P(X1 ≤ x ≤ X2). Peluang distribusi normal P(X1 ≤ x ≤ X2) bisa didapat dari P(x ≤ X2) -  P(x ≤ X1). Tinggal dihitung menggunakan fungsi pnorm
 
 ```r
 z_score_x1 = (x1-mean)/sd
