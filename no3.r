@@ -23,8 +23,10 @@ bayi %>%
   labs(title = "Simulasi kelahiran 6 bayi akan lahir",
        x = "Angka kelahiran bayi per periode",
        y = "Proporsi kelahiran bayi")
-# c
 bayi %>% dplyr::summarize(enam_bayi = sum(bayi$prob == 6) / n())
+
+# c
+# Hasil dari a (nilai eksak) dan b (nilai simulasi) memiliki hasil yang tidak jauh berbeda
 
 # d
 lambda #mean
