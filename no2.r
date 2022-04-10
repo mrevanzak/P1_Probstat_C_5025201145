@@ -25,4 +25,4 @@ ggplot(aes(x = factor(x), y = prob, fill = pasien)) +
 
 # c
 n*p #mean
-n*p(1-p) #variance
+n*p*(1 - p) #variance
